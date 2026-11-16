@@ -104,8 +104,10 @@ int comparaOrdJogador(const void *d1, const void *d2){
                         return 1;
                     }
                 }
+                return 1;
             }
         }
+        return 1;
     }
 }
 

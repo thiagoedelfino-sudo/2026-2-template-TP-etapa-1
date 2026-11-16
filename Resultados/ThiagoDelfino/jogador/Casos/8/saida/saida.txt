@@ -1,1 +1,1 @@
-valgrind: Resultados/ThiagoDelfino/jogador/prog: No such file or directory
+Opcao TIAGO invalida!

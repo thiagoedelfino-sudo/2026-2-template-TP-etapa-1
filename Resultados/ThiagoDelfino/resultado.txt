@@ -1,6 +1,6 @@
 Arquivos Esperados Corretos: 5 de 9
 Pastas Compiladas Corretamente: 2 de 6 
-Pastas Linkadas Corretamente: 0 de 6
+Pastas Linkadas Corretamente: 1 de 6
 Teste main
   - Resultados corretos: 0 de 10
   - Valgrinds corretos: 0 de 10
