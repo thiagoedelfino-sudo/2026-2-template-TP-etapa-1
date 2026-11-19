@@ -33,7 +33,9 @@ Jogador *criaJogador(char *nome, char *cor, int forca){
 Jogador *leJogador(){
     char nome[MAX_TAM_NOME_JOGADOR],cor[MAX_TAM_COR_JOGADOR];
     int forca;
-    scanf("%[^\n]\n%[^\n]\n%d",nome,cor,&forca);
+    scanf("%s\n",nome);
+    scanf("%s\n",cor);
+    scanf("%d",&forca);
     Jogador *j=criaJogador(nome,cor,forca);
     return j;
 }
@@ -46,9 +48,7 @@ Jogador *leJogador(){
  */
 void *copiaJogador(void *d){
     Jogador *j1=(Jogador*)d;
-    Jogador *j2=(Jogador*)calloc(1,sizeof(Jogador));
-    strcpy(j2->cor,j1->cor);
-    strcpy(j2->nome,j1->nome);
+    Jogador *j2=criaJogador(j1->nome,j1->cor,j1->forca);
     j2->disVenc= j1->disVenc;
     j2->forca=j1->forca;
     j2->monsDer=j1->monsDer;
@@ -82,7 +82,7 @@ int comparaNomeJogador(void *dado, void *nome){
  * @return Valor negativo se d1 deve vir antes de d2, positivo se deve vir depois e 0 se forem equivalentes
  */
 int comparaOrdJogador(const void *d1, const void *d2){
-    Jogador *j1=(Jogador*)d1, *j2=(Jogador*)d2;
+    Jogador *j1=*(Jogador**)d1, *j2=*(Jogador**)d2;
     if(j1->posjogador>j2->posjogador)
         return -1;
     else{
@@ -93,22 +93,19 @@ int comparaOrdJogador(const void *d1, const void *d2){
                 if(j1->forca==j2->forca){
                     if(j1->xp>j2->xp)
                         return -1;
-                    else{
-                        if(j1->xp==j2->xp){
-                            if(strcmp(j1->nome,j2->nome)<0)
-                                return -1;
-                            if(strcmp(j1->nome,j2->nome)>0)
-                                return 1;
-                            return 0;
-                        }
-                        return 1;
+                   else{
+                    if(j1->xp==j2->xp){
+                        return strcmp(j1->nome,j2->nome);
                     }
+                    return 1;
+                   }
                 }
                 return 1;
             }
         }
         return 1;
     }
+    return 1;
 }
 
 /**
@@ -292,7 +289,7 @@ void printRankingJogador(Jogador *j, int colocacao){
  */
 void printRelatorioJogador(void *dado){
     Jogador *j=(Jogador*)dado;
-    printf("-%s: jogadas %d | disputas vencidas %d | forca %d | xp %d | ouro %d\n",j->nome,j->jogadas,j->disVenc,j->forca,j->xp,j->ouro);
+    printf("- %s: jogadas %d | disputas vencidas %d | forca %d | xp %d | ouro %d\n",j->nome,j->jogadas,j->disVenc,j->forca,j->xp,j->ouro);
 }
 
 /**

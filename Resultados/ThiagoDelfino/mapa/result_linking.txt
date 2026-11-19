@@ -1,32 +1,32 @@
-/usr/bin/x86_64-linux-gnu-ld.bfd: Resultados/ThiagoDelfino/mapa/main.o: na função "chegaNaCasa":
-main.c:(.text+0x80c): referência não definida para "obtemOcupanteMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: main.c:(.text+0x82d): referência não definida para "moveJogadorMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: main.c:(.text+0x86d): referência não definida para "recuaJogadorMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: main.c:(.text+0x883): referência não definida para "moveJogadorMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: main.c:(.text+0x8ac): referência não definida para "recuaJogadorMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: Resultados/ThiagoDelfino/mapa/main.o: na função "executaJogada":
-main.c:(.text+0x8d4): referência não definida para "obtemPosicaoFimMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: main.c:(.text+0x8f6): referência não definida para "retiraJogadorMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: main.c:(.text+0x931): referência não definida para "moveJogadorMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: main.c:(.text+0x965): referência não definida para "obtemCelulaMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: main.c:(.text+0x999): referência não definida para "recuaJogadorMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: main.c:(.text+0x9ca): referência não definida para "moveJogadorMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: main.c:(.text+0x9ea): referência não definida para "moveJogadorMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: main.c:(.text+0x9ff): referência não definida para "retiraJogadorMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: Resultados/ThiagoDelfino/mapa/main.o: na função "obtemVencedorJogo":
-main.c:(.text+0xa3f): referência não definida para "obtemPosicaoFimMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: Resultados/ThiagoDelfino/mapa/main.o: na função "imprimeEstadoJogo":
-main.c:(.text+0xc82): referência não definida para "imprimeCelulasMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: Resultados/ThiagoDelfino/mapa/main.o: na função "imprimeRelatorioJogo":
-main.c:(.text+0xe7c): referência não definida para "obtemQtdCelulasMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: Resultados/ThiagoDelfino/mapa/main.o: na função "leEntradaMapa":
-main.c:(.text+0xff1): referência não definida para "insereCelulaMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: main.c:(.text+0x1043): referência não definida para "insereCelulaMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: main.c:(.text+0x109b): referência não definida para "insereCelulaMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: main.c:(.text+0x10f3): referência não definida para "insereCelulaMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: main.c:(.text+0x114b): referência não definida para "insereCelulaMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: Resultados/ThiagoDelfino/mapa/main.o:main.c:(.text+0x11a7): mais referências não definidas para "insereCelulaMapa" seguir
-/usr/bin/x86_64-linux-gnu-ld.bfd: Resultados/ThiagoDelfino/mapa/main.o: na função "main":
-main.c:(.text+0x11e5): referência não definida para "criaMapa"
-/usr/bin/x86_64-linux-gnu-ld.bfd: main.c:(.text+0x1469): referência não definida para "desalocaMapa"
+/usr/bin/ld: Resultados/ThiagoDelfino/mapa/main.o: in function `chegaNaCasa':
+main.c:(.text+0x80c): undefined reference to `obtemOcupanteMapa'
+/usr/bin/ld: main.c:(.text+0x82d): undefined reference to `moveJogadorMapa'
+/usr/bin/ld: main.c:(.text+0x86d): undefined reference to `recuaJogadorMapa'
+/usr/bin/ld: main.c:(.text+0x883): undefined reference to `moveJogadorMapa'
+/usr/bin/ld: main.c:(.text+0x8ac): undefined reference to `recuaJogadorMapa'
+/usr/bin/ld: Resultados/ThiagoDelfino/mapa/main.o: in function `executaJogada':
+main.c:(.text+0x8d4): undefined reference to `obtemPosicaoFimMapa'
+/usr/bin/ld: main.c:(.text+0x8f6): undefined reference to `retiraJogadorMapa'
+/usr/bin/ld: main.c:(.text+0x931): undefined reference to `moveJogadorMapa'
+/usr/bin/ld: main.c:(.text+0x965): undefined reference to `obtemCelulaMapa'
+/usr/bin/ld: main.c:(.text+0x999): undefined reference to `recuaJogadorMapa'
+/usr/bin/ld: main.c:(.text+0x9ca): undefined reference to `moveJogadorMapa'
+/usr/bin/ld: main.c:(.text+0x9ea): undefined reference to `moveJogadorMapa'
+/usr/bin/ld: main.c:(.text+0x9ff): undefined reference to `retiraJogadorMapa'
+/usr/bin/ld: Resultados/ThiagoDelfino/mapa/main.o: in function `obtemVencedorJogo':
+main.c:(.text+0xa3f): undefined reference to `obtemPosicaoFimMapa'
+/usr/bin/ld: Resultados/ThiagoDelfino/mapa/main.o: in function `imprimeEstadoJogo':
+main.c:(.text+0xc82): undefined reference to `imprimeCelulasMapa'
+/usr/bin/ld: Resultados/ThiagoDelfino/mapa/main.o: in function `imprimeRelatorioJogo':
+main.c:(.text+0xe7c): undefined reference to `obtemQtdCelulasMapa'
+/usr/bin/ld: Resultados/ThiagoDelfino/mapa/main.o: in function `leEntradaMapa':
+main.c:(.text+0xff1): undefined reference to `insereCelulaMapa'
+/usr/bin/ld: main.c:(.text+0x1043): undefined reference to `insereCelulaMapa'
+/usr/bin/ld: main.c:(.text+0x109b): undefined reference to `insereCelulaMapa'
+/usr/bin/ld: main.c:(.text+0x10f3): undefined reference to `insereCelulaMapa'
+/usr/bin/ld: main.c:(.text+0x114b): undefined reference to `insereCelulaMapa'
+/usr/bin/ld: Resultados/ThiagoDelfino/mapa/main.o:main.c:(.text+0x11a7): more undefined references to `insereCelulaMapa' follow
+/usr/bin/ld: Resultados/ThiagoDelfino/mapa/main.o: in function `main':
+main.c:(.text+0x11e5): undefined reference to `criaMapa'
+/usr/bin/ld: main.c:(.text+0x1469): undefined reference to `desalocaMapa'
 collect2: error: ld returned 1 exit status

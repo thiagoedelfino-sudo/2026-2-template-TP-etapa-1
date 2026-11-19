@@ -1,34 +1,15 @@
-==41943== Memcheck, a memory error detector
-==41943== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
-==41943== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
-==41943== Command: Resultados/ThiagoDelfino/jogador/prog Resultados/ThiagoDelfino/jogador/Casos/2
-==41943== Parent PID: 41942
-==41943== 
-==41943== Conditional jump or move depends on uninitialised value(s)
-==41943==    at 0x485D2BF: strcpy (vg_replace_strmem.c:565)
-==41943==    by 0x400163D: criaJogador (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/jogador/prog)
-==41943==    by 0x40016B5: leJogador (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/jogador/prog)
-==41943==    by 0x4002EAE: main (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/jogador/prog)
-==41943== 
-==41943== Conditional jump or move depends on uninitialised value(s)
-==41943==    at 0x485D2BF: strcpy (vg_replace_strmem.c:565)
-==41943==    by 0x4001654: criaJogador (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/jogador/prog)
-==41943==    by 0x40016B5: leJogador (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/jogador/prog)
-==41943==    by 0x4002EAE: main (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/jogador/prog)
-==41943== 
-==41943== Conditional jump or move depends on uninitialised value(s)
-==41943==    at 0x485D2EF: strcpy (vg_replace_strmem.c:565)
-==41943==    by 0x4001654: criaJogador (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/jogador/prog)
-==41943==    by 0x40016B5: leJogador (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/jogador/prog)
-==41943==    by 0x4002EAE: main (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/jogador/prog)
-==41943== 
-==41943== 
-==41943== HEAP SUMMARY:
-==41943==     in use at exit: 0 bytes in 0 blocks
-==41943==   total heap usage: 39 allocs, 39 frees, 9,588 bytes allocated
-==41943== 
-==41943== All heap blocks were freed -- no leaks are possible
-==41943== 
-==41943== Use --track-origins=yes to see where uninitialised values come from
-==41943== For lists of detected and suppressed errors, rerun with: -s
-==41943== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==794339== Memcheck, a memory error detector
+==794339== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==794339== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==794339== Command: Resultados/ThiagoDelfino/jogador/prog Resultados/ThiagoDelfino/jogador/Casos/2
+==794339== Parent PID: 794338
+==794339== 
+==794339== 
+==794339== HEAP SUMMARY:
+==794339==     in use at exit: 0 bytes in 0 blocks
+==794339==   total heap usage: 74 allocs, 74 frees, 11,604 bytes allocated
+==794339== 
+==794339== All heap blocks were freed -- no leaks are possible
+==794339== 
+==794339== For lists of detected and suppressed errors, rerun with: -s
+==794339== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

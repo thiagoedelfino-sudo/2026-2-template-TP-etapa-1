@@ -1,16 +1,16 @@
-/usr/bin/x86_64-linux-gnu-ld.bfd: Resultados/ThiagoDelfino/celula/main.o: na função "executaJogada":
-main.c:(.text+0x977): referência não definida para "executaAcaoCelula"
-/usr/bin/x86_64-linux-gnu-ld.bfd: Resultados/ThiagoDelfino/celula/mapa.o: na função "insereCelulaMapa":
-mapa.c:(.text+0x6a): referência não definida para "criaCelula"
-/usr/bin/x86_64-linux-gnu-ld.bfd: Resultados/ThiagoDelfino/celula/mapa.o: na função "obtemOcupanteMapa":
-mapa.c:(.text+0x181): referência não definida para "obtemOcupanteCelula"
-/usr/bin/x86_64-linux-gnu-ld.bfd: Resultados/ThiagoDelfino/celula/mapa.o: na função "retiraJogadorMapa":
-mapa.c:(.text+0x1ca): referência não definida para "obtemOcupanteCelula"
-/usr/bin/x86_64-linux-gnu-ld.bfd: mapa.c:(.text+0x1e1): referência não definida para "defineOcupanteCelula"
-/usr/bin/x86_64-linux-gnu-ld.bfd: Resultados/ThiagoDelfino/celula/mapa.o: na função "moveJogadorMapa":
-mapa.c:(.text+0x24e): referência não definida para "defineOcupanteCelula"
-/usr/bin/x86_64-linux-gnu-ld.bfd: Resultados/ThiagoDelfino/celula/mapa.o: na função "imprimeCelulasMapa":
-mapa.c:(.text+0x2f9): referência não definida para "imprimeCelula"
-/usr/bin/x86_64-linux-gnu-ld.bfd: Resultados/ThiagoDelfino/celula/mapa.o: na função "desalocaMapa":
-mapa.c:(.text+0x345): referência não definida para "desalocaCelula"
+/usr/bin/ld: Resultados/ThiagoDelfino/celula/main.o: in function `executaJogada':
+main.c:(.text+0x977): undefined reference to `executaAcaoCelula'
+/usr/bin/ld: Resultados/ThiagoDelfino/celula/mapa.o: in function `insereCelulaMapa':
+mapa.c:(.text+0x6a): undefined reference to `criaCelula'
+/usr/bin/ld: Resultados/ThiagoDelfino/celula/mapa.o: in function `obtemOcupanteMapa':
+mapa.c:(.text+0x181): undefined reference to `obtemOcupanteCelula'
+/usr/bin/ld: Resultados/ThiagoDelfino/celula/mapa.o: in function `retiraJogadorMapa':
+mapa.c:(.text+0x1ca): undefined reference to `obtemOcupanteCelula'
+/usr/bin/ld: mapa.c:(.text+0x1e1): undefined reference to `defineOcupanteCelula'
+/usr/bin/ld: Resultados/ThiagoDelfino/celula/mapa.o: in function `moveJogadorMapa':
+mapa.c:(.text+0x24e): undefined reference to `defineOcupanteCelula'
+/usr/bin/ld: Resultados/ThiagoDelfino/celula/mapa.o: in function `imprimeCelulasMapa':
+mapa.c:(.text+0x2f9): undefined reference to `imprimeCelula'
+/usr/bin/ld: Resultados/ThiagoDelfino/celula/mapa.o: in function `desalocaMapa':
+mapa.c:(.text+0x345): undefined reference to `desalocaCelula'
 collect2: error: ld returned 1 exit status
