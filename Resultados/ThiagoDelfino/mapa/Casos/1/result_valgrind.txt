@@ -1,0 +1,43 @@
+==72718== Memcheck, a memory error detector
+==72718== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==72718== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==72718== Command: Resultados/ThiagoDelfino/mapa/prog Resultados/ThiagoDelfino/mapa/Casos/1
+==72718== Parent PID: 72717
+==72718== 
+==72718== Invalid read of size 4
+==72718==    at 0x4001815: comparaOrdJogador (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
+==72718==    by 0x4003211: retiraJogadorMapa (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
+==72718==    by 0x40024B2: executaJogada (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
+==72718==    by 0x40026CB: executaRolagemJogo (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
+==72718==    by 0x4002EEE: main (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
+==72718==  Address 0x414e91 is not stack'd, malloc'd or (recently) free'd
+==72718== 
+==72718== 
+==72718== Process terminating with default action of signal 11 (SIGSEGV)
+==72718==  Access not within mapped region at address 0x414E91
+==72718==    at 0x4001815: comparaOrdJogador (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
+==72718==    by 0x4003211: retiraJogadorMapa (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
+==72718==    by 0x40024B2: executaJogada (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
+==72718==    by 0x40026CB: executaRolagemJogo (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
+==72718==    by 0x4002EEE: main (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
+==72718==  If you believe this happened as a result of a stack
+==72718==  overflow in your program's main thread (unlikely but
+==72718==  possible), you can try to increase the size of the
+==72718==  main thread stack using the --main-stacksize= flag.
+==72718==  The main thread stack size used in this run was 8388608.
+==72718== 
+==72718== HEAP SUMMARY:
+==72718==     in use at exit: 5,180 bytes in 29 blocks
+==72718==   total heap usage: 43 allocs, 14 frees, 5,828 bytes allocated
+==72718== 
+==72718== LEAK SUMMARY:
+==72718==    definitely lost: 0 bytes in 0 blocks
+==72718==    indirectly lost: 0 bytes in 0 blocks
+==72718==      possibly lost: 0 bytes in 0 blocks
+==72718==    still reachable: 5,180 bytes in 29 blocks
+==72718==         suppressed: 0 bytes in 0 blocks
+==72718== Reachable blocks (those to which a pointer was found) are not shown.
+==72718== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==72718== 
+==72718== For lists of detected and suppressed errors, rerun with: -s
+==72718== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
