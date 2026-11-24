@@ -14,7 +14,6 @@ struct Mapa{
  */
 Mapa *criaMapa(){
     Mapa *m=(Mapa*)calloc(1,sizeof(Mapa));
-    m->celulas=(Celula**)calloc(1,sizeof(Celula*));
     return m;
 }
 
@@ -29,9 +28,9 @@ Mapa *criaMapa(){
  * @param desaloca Função de callback que desaloca a ação
  */
 void insereCelulaMapa(Mapa *m, void *acao, func_ptr_executa executa, func_ptr_imprime imprime, func_ptr_desaloca desaloca){
+     m->celulas=realloc(m->celulas,sizeof(Celula*)*(m->nCelulas+1));
     m->celulas[m->nCelulas]=criaCelula(acao,executa,imprime,desaloca);
     m->nCelulas++;
-    m->celulas=realloc(m->celulas,sizeof(Celula*)*(m->nCelulas+1));
 }
 
 /**
@@ -72,7 +71,10 @@ Celula *obtemCelulaMapa(Mapa *m, int posicao){
  * @return Jogador ocupante ou NULL
  */
 Jogador *obtemOcupanteMapa(Mapa *m, int posicao){
-    return obtemOcupanteCelula(m->celulas[posicao-1]);
+    if(posicao<=m->nCelulas&&posicao>=1){
+        return obtemOcupanteCelula(m->celulas[posicao-1]);
+    }
+    return NULL;
 }
 
 /**
@@ -83,10 +85,12 @@ Jogador *obtemOcupanteMapa(Mapa *m, int posicao){
  */
 void retiraJogadorMapa(Mapa *m, Jogador *j){
     for(int i=0;i<m->nCelulas;i++){
-        Jogador *jOcupante=obtemOcupanteCelula(m->celulas[i]);
-        if(jOcupante!=NULL&&comparaOrdJogador(jOcupante,j)==0){
-            defineOcupanteCelula(m->celulas[i],NULL);
-            break;
+        Jogador *j2=obtemOcupanteCelula(m->celulas[i]);
+        if(j2!=NULL){
+            if(j2==j){
+                defineOcupanteCelula(m->celulas[i],NULL);
+                break;
+            }
         }
     }
 }
@@ -100,8 +104,11 @@ void retiraJogadorMapa(Mapa *m, Jogador *j){
  * @param posicao Casa de destino (0 a N + 1)
  */
 void moveJogadorMapa(Mapa *m, Jogador *j, int posicao){
-    retiraJogadorMapa(m,j);
-    defineOcupanteCelula(m->celulas[posicao-1],j);
+    retiraJogadorMapa(m, j);
+    definePosicaoJogador(j, posicao);
+    if (posicao >= 1 && posicao <= m->nCelulas) {
+        defineOcupanteCelula(m->celulas[posicao - 1], j);
+    }
 }
 
 /**
@@ -113,9 +120,14 @@ void moveJogadorMapa(Mapa *m, Jogador *j, int posicao){
  * @param origem Casa a partir da qual o jogador recua (a casa em que ele estava)
  */
 void recuaJogadorMapa(Mapa *m, Jogador *j, int origem){
-    for(int i=origem-1;i>0;i--){
-        moveJogadorMapa(m,j,i);
+   int pos = origem - 1;
+    while (pos > 0 && obtemOcupanteMapa(m, pos) != NULL) {
+        pos--;
     }
+    if (pos < 0) {
+        pos = 0;
+    }
+    moveJogadorMapa(m, j, pos);
 }
 
 /**

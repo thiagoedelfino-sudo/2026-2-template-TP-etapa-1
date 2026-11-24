@@ -1,43 +1,15 @@
-==72941== Memcheck, a memory error detector
-==72941== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
-==72941== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
-==72941== Command: Resultados/ThiagoDelfino/mapa/prog Resultados/ThiagoDelfino/mapa/Casos/10
-==72941== Parent PID: 72940
-==72941== 
-==72941== Invalid read of size 4
-==72941==    at 0x4001815: comparaOrdJogador (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==72941==    by 0x4003211: retiraJogadorMapa (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==72941==    by 0x40024B2: executaJogada (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==72941==    by 0x40026CB: executaRolagemJogo (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==72941==    by 0x4002EEE: main (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==72941==  Address 0x414e91 is not stack'd, malloc'd or (recently) free'd
-==72941== 
-==72941== 
-==72941== Process terminating with default action of signal 11 (SIGSEGV)
-==72941==  Access not within mapped region at address 0x414E91
-==72941==    at 0x4001815: comparaOrdJogador (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==72941==    by 0x4003211: retiraJogadorMapa (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==72941==    by 0x40024B2: executaJogada (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==72941==    by 0x40026CB: executaRolagemJogo (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==72941==    by 0x4002EEE: main (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==72941==  If you believe this happened as a result of a stack
-==72941==  overflow in your program's main thread (unlikely but
-==72941==  possible), you can try to increase the size of the
-==72941==  main thread stack using the --main-stacksize= flag.
-==72941==  The main thread stack size used in this run was 8388608.
-==72941== 
-==72941== HEAP SUMMARY:
-==72941==     in use at exit: 9,276 bytes in 30 blocks
-==72941==   total heap usage: 51 allocs, 21 frees, 10,284 bytes allocated
-==72941== 
-==72941== LEAK SUMMARY:
-==72941==    definitely lost: 0 bytes in 0 blocks
-==72941==    indirectly lost: 0 bytes in 0 blocks
-==72941==      possibly lost: 0 bytes in 0 blocks
-==72941==    still reachable: 9,276 bytes in 30 blocks
-==72941==         suppressed: 0 bytes in 0 blocks
-==72941== Reachable blocks (those to which a pointer was found) are not shown.
-==72941== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==72941== 
-==72941== For lists of detected and suppressed errors, rerun with: -s
-==72941== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==42913== Memcheck, a memory error detector
+==42913== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==42913== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==42913== Command: Resultados/ThiagoDelfino/mapa/prog Resultados/ThiagoDelfino/mapa/Casos/10
+==42913== Parent PID: 42912
+==42913== 
+==42913== 
+==42913== HEAP SUMMARY:
+==42913==     in use at exit: 0 bytes in 0 blocks
+==42913==   total heap usage: 50 allocs, 50 frees, 10,180 bytes allocated
+==42913== 
+==42913== All heap blocks were freed -- no leaks are possible
+==42913== 
+==42913== For lists of detected and suppressed errors, rerun with: -s
+==42913== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

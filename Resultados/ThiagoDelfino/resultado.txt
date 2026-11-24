@@ -14,9 +14,9 @@ Teste jogador
   - Valgrinds corretos: 10 de 10
 Nota de ThiagoDelfino para o teste jogador: 1.50
 Teste mapa
-  - Resultados corretos: 0 de 10
-  - Valgrinds corretos: 0 de 10
-Nota de ThiagoDelfino para o teste mapa: 0
+  - Resultados corretos: 10 de 10
+  - Valgrinds corretos: 10 de 10
+Nota de ThiagoDelfino para o teste mapa: .50
 Teste celula
   - Resultados corretos: 10 de 10
   - Valgrinds corretos: 10 de 10
@@ -25,5 +25,5 @@ Teste acao_monstro
   - Resultados corretos: 10 de 10
   - Valgrinds corretos: 10 de 10
 Nota de ThiagoDelfino para o teste acao_monstro: .50
-Nota de ThiagoDelfino: 0+(1.50)+(.50)+(0)+(0)+(0)+(.50)
-Nota de ThiagoDelfino: 2.50
+Nota de ThiagoDelfino: 0+(1.50)+(.50)+(0)+(.50)+(0)+(.50)
+Nota de ThiagoDelfino: 3.00

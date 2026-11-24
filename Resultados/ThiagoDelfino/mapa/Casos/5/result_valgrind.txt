@@ -1,38 +1,15 @@
-==73829== Memcheck, a memory error detector
-==73829== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
-==73829== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
-==73829== Command: Resultados/ThiagoDelfino/mapa/prog Resultados/ThiagoDelfino/mapa/Casos/5
-==73829== Parent PID: 73828
-==73829== 
-==73829== Invalid read of size 4
-==73829==    at 0x4001815: comparaOrdJogador (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==73829==    by 0x4003211: retiraJogadorMapa (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==73829==    by 0x40024B2: executaJogada (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==73829==    by 0x40026CB: executaRolagemJogo (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==73829==    by 0x4002EEE: main (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==73829==  Address 0x5249455252455597 is not stack'd, malloc'd or (recently) free'd
-==73829== 
-==73829== 
-==73829== Process terminating with default action of signal 11 (SIGSEGV)
-==73829==  General Protection Fault
-==73829==    at 0x4001815: comparaOrdJogador (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==73829==    by 0x4003211: retiraJogadorMapa (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==73829==    by 0x40024B2: executaJogada (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==73829==    by 0x40026CB: executaRolagemJogo (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==73829==    by 0x4002EEE: main (in /home/blizto/Faculdade/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/mapa/prog)
-==73829== 
-==73829== HEAP SUMMARY:
-==73829==     in use at exit: 5,632 bytes in 38 blocks
-==73829==   total heap usage: 57 allocs, 19 frees, 6,768 bytes allocated
-==73829== 
-==73829== LEAK SUMMARY:
-==73829==    definitely lost: 0 bytes in 0 blocks
-==73829==    indirectly lost: 0 bytes in 0 blocks
-==73829==      possibly lost: 0 bytes in 0 blocks
-==73829==    still reachable: 5,632 bytes in 38 blocks
-==73829==         suppressed: 0 bytes in 0 blocks
-==73829== Reachable blocks (those to which a pointer was found) are not shown.
-==73829== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==73829== 
-==73829== For lists of detected and suppressed errors, rerun with: -s
-==73829== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==43325== Memcheck, a memory error detector
+==43325== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==43325== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==43325== Command: Resultados/ThiagoDelfino/mapa/prog Resultados/ThiagoDelfino/mapa/Casos/5
+==43325== Parent PID: 43324
+==43325== 
+==43325== 
+==43325== HEAP SUMMARY:
+==43325==     in use at exit: 0 bytes in 0 blocks
+==43325==   total heap usage: 75 allocs, 75 frees, 11,704 bytes allocated
+==43325== 
+==43325== All heap blocks were freed -- no leaks are possible
+==43325== 
+==43325== For lists of detected and suppressed errors, rerun with: -s
+==43325== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
