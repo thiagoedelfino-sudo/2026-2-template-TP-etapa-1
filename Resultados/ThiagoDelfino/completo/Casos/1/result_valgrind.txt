@@ -1,15 +1,42 @@
-==430257== Memcheck, a memory error detector
-==430257== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
-==430257== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
-==430257== Command: Resultados/ThiagoDelfino/completo/prog Resultados/ThiagoDelfino/completo/Casos/1
-==430257== Parent PID: 430256
-==430257== 
-==430257== 
-==430257== HEAP SUMMARY:
-==430257==     in use at exit: 0 bytes in 0 blocks
-==430257==   total heap usage: 46 allocs, 46 frees, 9,832 bytes allocated
-==430257== 
-==430257== All heap blocks were freed -- no leaks are possible
-==430257== 
-==430257== For lists of detected and suppressed errors, rerun with: -s
-==430257== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==41639== Memcheck, a memory error detector
+==41639== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==41639== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==41639== Command: Resultados/ThiagoDelfino/completo/prog Resultados/ThiagoDelfino/completo/Casos/1
+==41639== Parent PID: 41638
+==41639== 
+==41639== Use of uninitialised value of size 8
+==41639==    at 0x109DD3: comparaOrdJogador (in /home/teadelfino/Documents/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/completo/prog)
+==41639==    by 0x10AC62: main (in /home/teadelfino/Documents/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/completo/prog)
+==41639== 
+==41639== Invalid read of size 8
+==41639==    at 0x109DD3: comparaOrdJogador (in /home/teadelfino/Documents/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/completo/prog)
+==41639==    by 0x10AC62: main (in /home/teadelfino/Documents/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/completo/prog)
+==41639==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==41639== 
+==41639== 
+==41639== Process terminating with default action of signal 11 (SIGSEGV)
+==41639==  Access not within mapped region at address 0x0
+==41639==    at 0x109DD3: comparaOrdJogador (in /home/teadelfino/Documents/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/completo/prog)
+==41639==    by 0x10AC62: main (in /home/teadelfino/Documents/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/completo/prog)
+==41639==  If you believe this happened as a result of a stack
+==41639==  overflow in your program's main thread (unlikely but
+==41639==  possible), you can try to increase the size of the
+==41639==  main thread stack using the --main-stacksize= flag.
+==41639==  The main thread stack size used in this run was 8388608.
+==41639== 
+==41639== HEAP SUMMARY:
+==41639==     in use at exit: 9,376 bytes in 34 blocks
+==41639==   total heap usage: 47 allocs, 13 frees, 9,928 bytes allocated
+==41639== 
+==41639== LEAK SUMMARY:
+==41639==    definitely lost: 0 bytes in 0 blocks
+==41639==    indirectly lost: 0 bytes in 0 blocks
+==41639==      possibly lost: 0 bytes in 0 blocks
+==41639==    still reachable: 9,376 bytes in 34 blocks
+==41639==         suppressed: 0 bytes in 0 blocks
+==41639== Reachable blocks (those to which a pointer was found) are not shown.
+==41639== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==41639== 
+==41639== Use --track-origins=yes to see where uninitialised values come from
+==41639== For lists of detected and suppressed errors, rerun with: -s
+==41639== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

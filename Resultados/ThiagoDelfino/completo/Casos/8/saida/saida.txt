@@ -5,7 +5,7 @@
 4. TIAGO (AZUL) | casa 0 | forca 3 | xp 0
 ===============================
 =========== ESTADO ============
-[INICIO] <- TIAGO <- BRUNA <- AMANDA
+[INICIO] <- TIAGO, BRUNA, AMANDA
 [1] VOLTA 1
 [2] VOLTA 2
 [3] VOLTA 3
@@ -31,7 +31,7 @@
 4. TIAGO (AZUL) | casa 0 | forca 3 | xp 0
 ===============================
 =========== ESTADO ============
-[INICIO] <- TIAGO <- CAIO <- AMANDA
+[INICIO] <- TIAGO, CAIO, AMANDA
 [1] VOLTA 1
 [2] VOLTA 2
 [3] VOLTA 3

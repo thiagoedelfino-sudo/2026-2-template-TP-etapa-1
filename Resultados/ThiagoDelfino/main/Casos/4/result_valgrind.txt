@@ -1,15 +1,42 @@
-==429610== Memcheck, a memory error detector
-==429610== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
-==429610== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
-==429610== Command: Resultados/ThiagoDelfino/main/prog Resultados/ThiagoDelfino/main/Casos/4
-==429610== Parent PID: 429609
-==429610== 
-==429610== 
-==429610== HEAP SUMMARY:
-==429610==     in use at exit: 0 bytes in 0 blocks
-==429610==   total heap usage: 47 allocs, 47 frees, 9,744 bytes allocated
-==429610== 
-==429610== All heap blocks were freed -- no leaks are possible
-==429610== 
-==429610== For lists of detected and suppressed errors, rerun with: -s
-==429610== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==40271== Memcheck, a memory error detector
+==40271== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==40271== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==40271== Command: Resultados/ThiagoDelfino/main/prog Resultados/ThiagoDelfino/main/Casos/4
+==40271== Parent PID: 40270
+==40271== 
+==40271== Use of uninitialised value of size 8
+==40271==    at 0x109D9E: comparaOrdJogador (in /home/teadelfino/Documents/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/main/prog)
+==40271==    by 0x10ABE6: main (in /home/teadelfino/Documents/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/main/prog)
+==40271== 
+==40271== Invalid read of size 8
+==40271==    at 0x109D9E: comparaOrdJogador (in /home/teadelfino/Documents/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/main/prog)
+==40271==    by 0x10ABE6: main (in /home/teadelfino/Documents/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/main/prog)
+==40271==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==40271== 
+==40271== 
+==40271== Process terminating with default action of signal 11 (SIGSEGV)
+==40271==  Access not within mapped region at address 0x0
+==40271==    at 0x109D9E: comparaOrdJogador (in /home/teadelfino/Documents/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/main/prog)
+==40271==    by 0x10ABE6: main (in /home/teadelfino/Documents/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/main/prog)
+==40271==  If you believe this happened as a result of a stack
+==40271==  overflow in your program's main thread (unlikely but
+==40271==  possible), you can try to increase the size of the
+==40271==  main thread stack using the --main-stacksize= flag.
+==40271==  The main thread stack size used in this run was 8388608.
+==40271== 
+==40271== HEAP SUMMARY:
+==40271==     in use at exit: 9,264 bytes in 34 blocks
+==40271==   total heap usage: 47 allocs, 13 frees, 9,816 bytes allocated
+==40271== 
+==40271== LEAK SUMMARY:
+==40271==    definitely lost: 0 bytes in 0 blocks
+==40271==    indirectly lost: 0 bytes in 0 blocks
+==40271==      possibly lost: 0 bytes in 0 blocks
+==40271==    still reachable: 9,264 bytes in 34 blocks
+==40271==         suppressed: 0 bytes in 0 blocks
+==40271== Reachable blocks (those to which a pointer was found) are not shown.
+==40271== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==40271== 
+==40271== Use --track-origins=yes to see where uninitialised values come from
+==40271== For lists of detected and suppressed errors, rerun with: -s
+==40271== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

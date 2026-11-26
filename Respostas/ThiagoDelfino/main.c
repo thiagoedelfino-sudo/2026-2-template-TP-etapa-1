@@ -82,7 +82,12 @@ int main() {
             }
         } else if (strcmp(indice, "E") == 0) {
             scanf("%s", indice);
-
+            int nJogadas = 0, nDisputas = 0, nMonstDerr = 0;
+            for (int b = 0; b < nJogadores; b++) {
+                nMonstDerr += obtemMonstrosDerrotadosJogador(jogadores[b]);
+                nJogadas += obtemJogadasJogador(jogadores[b]);
+                nDisputas += obtemDisputasVencidasJogador(jogadores[b]);
+            }
             if (strcmp(indice, "ESTADO") == 0) {
                 printf("=========== ESTADO ============\n");
                 printf("[INICIO]");
@@ -110,12 +115,7 @@ int main() {
                 }
                 printf("===============================\n");
             } else if (strcmp(indice, "RELATORIO") == 0) {
-                int nJogadas = 0, nDisputas = 0, nMonstDerr = 0;
-                for (int b = 0; b < nJogadores; b++) {
-                    nMonstDerr += obtemMonstrosDerrotadosJogador(jogadores[b]);
-                    nJogadas += obtemJogadasJogador(jogadores[b]);
-                    nDisputas += obtemDisputasVencidasJogador(jogadores[b]);
-                }
+                
                 printf("========= RELATORIO ===========\n");
                 printf("- Celulas do mapa: %d\n", obtemQtdCelulasMapa(m));
                 printf("- Jogadores: %d\n", nJogadores);
@@ -136,10 +136,13 @@ int main() {
                 printf("=========== RANKING ===========\n");
                 if (nJogadores > 0) {
                     Jogador **ranking = malloc(sizeof(Jogador *) * nJogadores);
-                    memcpy(ranking, jogadores, sizeof(Jogador *) * nJogadores);
+                    for(int i=0;i<nJogadores;i++){
+                        ranking[i]=copiaJogador(jogadores[i]);
+                    }
                     qsort(ranking, nJogadores, sizeof(Jogador *), comparaOrdJogador);
                     for (int i = 0; i < nJogadores; i++) {
                         printRankingJogador(ranking[i], i + 1);
+                        desalocaJogador(ranking[i]);
                     }
                     free(ranking);
                 }
@@ -155,7 +158,6 @@ int main() {
                     int dado = RolaDado();
                     Jogador *joga = jogadores[turno];
                     incrementaJogadasJogador(joga);
-
                     int pos = obtemPosicaoJogador(joga) + dado;
                     if (pos >= obtemPosicaoFimMapa(m)) {
                         pos = obtemPosicaoFimMapa(m);
@@ -164,7 +166,6 @@ int main() {
                         moveJogadorMapa(m, joga, pos);
                         break;
                     }
-
                     Celula *celu = obtemCelulaMapa(m, pos);
                     if (estaOcupadaCelula(celu) == 1) {
                         resolveDisputa(m, joga, pos);

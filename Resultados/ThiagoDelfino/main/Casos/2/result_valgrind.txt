@@ -1,15 +1,42 @@
-==429374== Memcheck, a memory error detector
-==429374== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
-==429374== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
-==429374== Command: Resultados/ThiagoDelfino/main/prog Resultados/ThiagoDelfino/main/Casos/2
-==429374== Parent PID: 429373
-==429374== 
-==429374== 
-==429374== HEAP SUMMARY:
-==429374==     in use at exit: 0 bytes in 0 blocks
-==429374==   total heap usage: 52 allocs, 52 frees, 10,224 bytes allocated
-==429374== 
-==429374== All heap blocks were freed -- no leaks are possible
-==429374== 
-==429374== For lists of detected and suppressed errors, rerun with: -s
-==429374== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==39813== Memcheck, a memory error detector
+==39813== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==39813== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==39813== Command: Resultados/ThiagoDelfino/main/prog Resultados/ThiagoDelfino/main/Casos/2
+==39813== Parent PID: 39812
+==39813== 
+==39813== Use of uninitialised value of size 8
+==39813==    at 0x109D9E: comparaOrdJogador (in /home/teadelfino/Documents/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/main/prog)
+==39813==    by 0x10ABE6: main (in /home/teadelfino/Documents/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/main/prog)
+==39813== 
+==39813== Invalid read of size 8
+==39813==    at 0x109D9E: comparaOrdJogador (in /home/teadelfino/Documents/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/main/prog)
+==39813==    by 0x10ABE6: main (in /home/teadelfino/Documents/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/main/prog)
+==39813==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==39813== 
+==39813== 
+==39813== Process terminating with default action of signal 11 (SIGSEGV)
+==39813==  Access not within mapped region at address 0x0
+==39813==    at 0x109D9E: comparaOrdJogador (in /home/teadelfino/Documents/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/main/prog)
+==39813==    by 0x10ABE6: main (in /home/teadelfino/Documents/2026-2-template-TP-etapa-1/Resultados/ThiagoDelfino/main/prog)
+==39813==  If you believe this happened as a result of a stack
+==39813==  overflow in your program's main thread (unlikely but
+==39813==  possible), you can try to increase the size of the
+==39813==  main thread stack using the --main-stacksize= flag.
+==39813==  The main thread stack size used in this run was 8388608.
+==39813== 
+==39813== HEAP SUMMARY:
+==39813==     in use at exit: 9,488 bytes in 35 blocks
+==39813==   total heap usage: 51 allocs, 16 frees, 10,256 bytes allocated
+==39813== 
+==39813== LEAK SUMMARY:
+==39813==    definitely lost: 0 bytes in 0 blocks
+==39813==    indirectly lost: 0 bytes in 0 blocks
+==39813==      possibly lost: 0 bytes in 0 blocks
+==39813==    still reachable: 9,488 bytes in 35 blocks
+==39813==         suppressed: 0 bytes in 0 blocks
+==39813== Reachable blocks (those to which a pointer was found) are not shown.
+==39813== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==39813== 
+==39813== Use --track-origins=yes to see where uninitialised values come from
+==39813== For lists of detected and suppressed errors, rerun with: -s
+==39813== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

@@ -1,5 +1,5 @@
 =========== ESTADO ============
-[INICIO] <- PEDRO <- JOAO
+[INICIO] <- PEDRO, JOAO
 [1] MONSTRO GUARDIAO (F:3 XP:7)
 [FIM]
 -------------------------------
@@ -8,7 +8,7 @@
 - Situacao: EM ANDAMENTO
 ===============================
 =========== ESTADO ============
-[INICIO] <- PEDRO <- JOAO
+[INICIO] <- PEDRO, JOAO
 [1] MONSTRO GUARDIAO (F:3 XP:7)
 [FIM]
 -------------------------------
