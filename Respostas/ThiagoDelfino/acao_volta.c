@@ -9,6 +9,7 @@ struct Volta{
 Volta *criaVolta(int recuo){
     Volta *v=(Volta*)calloc(1,sizeof(Volta));
     v->recuo=recuo;
+    return v;
 }
 
 Volta *leVolta(){
@@ -19,7 +20,7 @@ Volta *leVolta(){
 
 int executaVolta(void *dado,Jogador *j){
     Volta *v=(Volta*)dado;
-    return v->recuo;
+    return -v->recuo;
 }
 
 void imprimeVolta(void *dado){
@@ -27,7 +28,7 @@ void imprimeVolta(void *dado){
     printf("VOLTA %d",v->recuo);
 }
 
-void desalocaVolta(void dado){
+void desalocaVolta(void *dado){
     Volta *v=(Volta*)dado;
     if(v!=NULL)
         free(v);

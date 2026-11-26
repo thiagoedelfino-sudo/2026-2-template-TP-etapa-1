@@ -52,11 +52,11 @@
 - Situacao: EM ANDAMENTO
 ===============================
 =========== RANKING ===========
-1. JULIA (VERDE) | casa 4 | forca 5 | xp 0 
-2. IRIS (AZUL) | casa 3 | forca 3 | xp 5 
-3. KAUA (AMARELO) | casa 2 | forca 2 | xp 0 
-4. HEITOR (VERMELHO) | casa 1 | forca 4 | xp 0 
-5. LIA (PRETO) | casa 0 | forca 4 | xp 0 
+1. JULIA (VERDE) | casa 4 | forca 5 | xp 0
+2. IRIS (AZUL) | casa 3 | forca 3 | xp 5
+3. KAUA (AMARELO) | casa 2 | forca 2 | xp 0
+4. HEITOR (VERMELHO) | casa 1 | forca 4 | xp 0
+5. LIA (PRETO) | casa 0 | forca 4 | xp 0
 ===============================
 =========== ESTADO ============
 [INICIO]
@@ -112,11 +112,11 @@
 - Situacao: EM ANDAMENTO
 ===============================
 =========== RANKING ===========
-1. HEITOR (VERMELHO) | casa 8 | forca 4 | xp 0 
-2. JULIA (VERDE) | casa 6 | forca 5 | xp 0 
-3. KAUA (AMARELO) | casa 4 | forca 2 | xp 0 
-4. LIA (PRETO) | casa 3 | forca 4 | xp 5 
-5. IRIS (AZUL) | casa 2 | forca 3 | xp 5 
+1. HEITOR (VERMELHO) | casa 8 | forca 4 | xp 0
+2. JULIA (VERDE) | casa 6 | forca 5 | xp 0
+3. KAUA (AMARELO) | casa 4 | forca 2 | xp 0
+4. LIA (PRETO) | casa 3 | forca 4 | xp 5
+5. IRIS (AZUL) | casa 2 | forca 3 | xp 5
 ===============================
 =========== ESTADO ============
 [INICIO]
@@ -172,11 +172,11 @@
 - Situacao: EM ANDAMENTO
 ===============================
 =========== RANKING ===========
-1. HEITOR (VERMELHO) | casa 8 | forca 4 | xp 0 
-2. JULIA (VERDE) | casa 4 | forca 5 | xp 0 
-3. LIA (PRETO) | casa 3 | forca 4 | xp 5 
-4. IRIS (AZUL) | casa 2 | forca 3 | xp 5 
-5. KAUA (AMARELO) | casa 1 | forca 2 | xp 0 
+1. HEITOR (VERMELHO) | casa 8 | forca 4 | xp 0
+2. JULIA (VERDE) | casa 4 | forca 5 | xp 0
+3. LIA (PRETO) | casa 3 | forca 4 | xp 5
+4. IRIS (AZUL) | casa 2 | forca 3 | xp 5
+5. KAUA (AMARELO) | casa 1 | forca 2 | xp 0
 ===============================
 =========== ESTADO ============
 [INICIO]
@@ -232,11 +232,11 @@
 - Situacao: EM ANDAMENTO
 ===============================
 =========== RANKING ===========
-1. HEITOR (VERMELHO) | casa 13 | forca 5 | xp 0 
-2. LIA (PRETO) | casa 7 | forca 4 | xp 5 
-3. JULIA (VERDE) | casa 6 | forca 5 | xp 0 
-4. KAUA (AMARELO) | casa 4 | forca 2 | xp 0 
-5. IRIS (AZUL) | casa 1 | forca 3 | xp 5 
+1. HEITOR (VERMELHO) | casa 13 | forca 5 | xp 0
+2. LIA (PRETO) | casa 7 | forca 4 | xp 5
+3. JULIA (VERDE) | casa 6 | forca 5 | xp 0
+4. KAUA (AMARELO) | casa 4 | forca 2 | xp 0
+5. IRIS (AZUL) | casa 1 | forca 3 | xp 5
 ===============================
 =========== ESTADO ============
 [INICIO]
@@ -292,11 +292,11 @@
 - Situacao: EM ANDAMENTO
 ===============================
 =========== RANKING ===========
-1. HEITOR (VERMELHO) | casa 20 | forca 5 | xp 15 
-2. JULIA (VERDE) | casa 11 | forca 5 | xp 10 
-3. LIA (PRETO) | casa 10 | forca 4 | xp 15 
-4. IRIS (AZUL) | casa 9 | forca 3 | xp 10 
-5. KAUA (AMARELO) | casa 8 | forca 2 | xp 0 
+1. HEITOR (VERMELHO) | casa 20 | forca 5 | xp 15
+2. JULIA (VERDE) | casa 11 | forca 5 | xp 10
+3. LIA (PRETO) | casa 10 | forca 4 | xp 15
+4. IRIS (AZUL) | casa 9 | forca 3 | xp 10
+5. KAUA (AMARELO) | casa 8 | forca 2 | xp 0
 ===============================
 =========== ESTADO ============
 [INICIO]
@@ -352,11 +352,11 @@
 - Situacao: EM ANDAMENTO
 ===============================
 =========== RANKING ===========
-1. HEITOR (VERMELHO) | casa 41 | forca 5 | xp 15 
-2. JULIA (VERDE) | casa 29 | forca 5 | xp 10 
-3. LIA (PRETO) | casa 27 | forca 4 | xp 15 
-4. KAUA (AMARELO) | casa 20 | forca 2 | xp 0 
-5. IRIS (AZUL) | casa 18 | forca 4 | xp 10 
+1. HEITOR (VERMELHO) | casa 41 | forca 5 | xp 15
+2. JULIA (VERDE) | casa 29 | forca 5 | xp 10
+3. LIA (PRETO) | casa 27 | forca 4 | xp 15
+4. KAUA (AMARELO) | casa 20 | forca 2 | xp 0
+5. IRIS (AZUL) | casa 18 | forca 4 | xp 10
 ===============================
 =========== ESTADO ============
 [INICIO]
@@ -412,11 +412,11 @@
 - Situacao: VENCEDOR HEITOR
 ===============================
 =========== RANKING ===========
-1. HEITOR (VERMELHO) | casa 43 | forca 5 | xp 15 
-2. JULIA (VERDE) | casa 29 | forca 5 | xp 10 
-3. LIA (PRETO) | casa 27 | forca 4 | xp 15 
-4. KAUA (AMARELO) | casa 20 | forca 2 | xp 0 
-5. IRIS (AZUL) | casa 18 | forca 4 | xp 10 
+1. HEITOR (VERMELHO) | casa 43 | forca 5 | xp 15
+2. JULIA (VERDE) | casa 29 | forca 5 | xp 10
+3. LIA (PRETO) | casa 27 | forca 4 | xp 15
+4. KAUA (AMARELO) | casa 20 | forca 2 | xp 0
+5. IRIS (AZUL) | casa 18 | forca 4 | xp 10
 ===============================
 ========= RELATORIO ===========
 - Celulas do mapa: 42

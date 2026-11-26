@@ -21,10 +21,10 @@
 - Situacao: EM ANDAMENTO
 ===============================
 =========== RANKING ===========
-1. DIEGO (AZUL) | casa 0 | forca 6 | xp 0 
-2. ANA (VERMELHO) | casa 0 | forca 5 | xp 0 
-3. BRUNO (VERDE) | casa 0 | forca 5 | xp 0 
-4. CARLA (AMARELO) | casa 0 | forca 4 | xp 0 
+1. DIEGO (AZUL) | casa 0 | forca 6 | xp 0
+2. ANA (VERMELHO) | casa 0 | forca 5 | xp 0
+3. BRUNO (VERDE) | casa 0 | forca 5 | xp 0
+4. CARLA (AMARELO) | casa 0 | forca 4 | xp 0
 ===============================
 ========= RELATORIO ===========
 - Celulas do mapa: 12
@@ -84,10 +84,10 @@
 - Situacao: EM ANDAMENTO
 ===============================
 =========== RANKING ===========
-1. DIEGO (AZUL) | casa 4 | forca 6 | xp 0 
-2. CARLA (AMARELO) | casa 3 | forca 4 | xp 0 
-3. ANA (VERMELHO) | casa 2 | forca 5 | xp 10 
-4. BRUNO (VERDE) | casa 1 | forca 5 | xp 0 
+1. DIEGO (AZUL) | casa 4 | forca 6 | xp 0
+2. CARLA (AMARELO) | casa 3 | forca 4 | xp 0
+3. ANA (VERMELHO) | casa 2 | forca 5 | xp 10
+4. BRUNO (VERDE) | casa 1 | forca 5 | xp 0
 ===============================
 =========== ESTADO ============
 [INICIO]
@@ -125,8 +125,8 @@
 - DIEGO: jogadas 7 | disputas vencidas 6 | forca 6 | xp 0 | ouro 25
 ===============================
 =========== RANKING ===========
-1. DIEGO (AZUL) | casa 13 | forca 6 | xp 0 
-2. CARLA (AMARELO) | casa 5 | forca 4 | xp 0 
-3. ANA (VERMELHO) | casa 4 | forca 5 | xp 10 
-4. BRUNO (VERDE) | casa 2 | forca 5 | xp 0 
+1. DIEGO (AZUL) | casa 13 | forca 6 | xp 0
+2. CARLA (AMARELO) | casa 5 | forca 4 | xp 0
+3. ANA (VERMELHO) | casa 4 | forca 5 | xp 10
+4. BRUNO (VERDE) | casa 2 | forca 5 | xp 0
 ===============================

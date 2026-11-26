@@ -24,14 +24,13 @@ Item *leItem(){
     return criaItem(nome,preco,bonus);
 }
 
-int executaItem(void *dado,Jogador *j){
-    Item *i=(Item*)dado;
-    if(obtemOuroJogador(j)>=i->preco){
-        adicionaOuroJogador(j,-i->preco);
-        adicionaForcaJogador(j,i->bonus);
-        return 0;
+int executaItem(void *dado, Jogador *j) {
+    Item *i = (Item *)dado;
+    if (obtemOuroJogador(j) >= i->preco) {
+        adicionaOuroJogador(j, -i->preco);
+        adicionaForcaJogador(j, i->bonus);
     }
-    return RECUO_CELULA;
+    return 0;
 }
 
 void imprimeItem(void *dado){
@@ -39,7 +38,7 @@ void imprimeItem(void *dado){
     printf("ITEM %s (P:%d F:+%d)",i->nome,i->preco,i->bonus);
 }
 
-void desalocaItem(void dado){
+void desalocaItem(void *dado){
     Item *i=(Item*)dado;
     if(i!=NULL)
         free(i);

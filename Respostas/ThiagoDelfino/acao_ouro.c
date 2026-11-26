@@ -26,10 +26,10 @@ int executaOuro(void *dado,Jogador *j){
 
 void imprimeOuro(void *dado){
     Ouro *o=(Ouro*)dado;
-    printf("Ouro %d",o->moedas);
+    printf("OURO %d",o->moedas);
 }
 
-void desalocaOuro(void dado){
+void desalocaOuro(void *dado){
     Ouro *o=(Ouro*)dado;
     if(o!=NULL)
         free(o);

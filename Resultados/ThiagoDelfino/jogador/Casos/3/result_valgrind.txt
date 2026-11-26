@@ -1,15 +1,15 @@
-==42063== Memcheck, a memory error detector
-==42063== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
-==42063== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
-==42063== Command: Resultados/ThiagoDelfino/jogador/prog Resultados/ThiagoDelfino/jogador/Casos/3
-==42063== Parent PID: 42062
-==42063== 
-==42063== 
-==42063== HEAP SUMMARY:
-==42063==     in use at exit: 0 bytes in 0 blocks
-==42063==   total heap usage: 56 allocs, 56 frees, 10,956 bytes allocated
-==42063== 
-==42063== All heap blocks were freed -- no leaks are possible
-==42063== 
-==42063== For lists of detected and suppressed errors, rerun with: -s
-==42063== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==431623== Memcheck, a memory error detector
+==431623== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==431623== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==431623== Command: Resultados/ThiagoDelfino/jogador/prog Resultados/ThiagoDelfino/jogador/Casos/3
+==431623== Parent PID: 431622
+==431623== 
+==431623== 
+==431623== HEAP SUMMARY:
+==431623==     in use at exit: 0 bytes in 0 blocks
+==431623==   total heap usage: 56 allocs, 56 frees, 10,956 bytes allocated
+==431623== 
+==431623== All heap blocks were freed -- no leaks are possible
+==431623== 
+==431623== For lists of detected and suppressed errors, rerun with: -s
+==431623== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

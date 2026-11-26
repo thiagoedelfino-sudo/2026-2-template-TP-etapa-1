@@ -15,6 +15,6 @@ int executaItem(void *dado,Jogador *j);
 
 void imprimeItem(void *dado);
 
-void desalocaItem(void dado);
+void desalocaItem(void *dado);
 
 #endif

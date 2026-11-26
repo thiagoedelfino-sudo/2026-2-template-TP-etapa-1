@@ -1,8 +1,8 @@
 =========== RANKING ===========
-1. AMANDA (ROSA) | casa 0 | forca 3 | xp 0 
-2. BRUNA (VERDE) | casa 0 | forca 3 | xp 0 
-3. CAIO (ROXO) | casa 0 | forca 3 | xp 0 
-4. TIAGO (AZUL) | casa 0 | forca 3 | xp 0 
+1. AMANDA (ROSA) | casa 0 | forca 3 | xp 0
+2. BRUNA (VERDE) | casa 0 | forca 3 | xp 0
+3. CAIO (ROXO) | casa 0 | forca 3 | xp 0
+4. TIAGO (AZUL) | casa 0 | forca 3 | xp 0
 ===============================
 =========== ESTADO ============
 [INICIO] <- TIAGO, BRUNA, AMANDA
@@ -25,10 +25,10 @@
 - Situacao: EM ANDAMENTO
 ===============================
 =========== RANKING ===========
-1. CAIO (ROXO) | casa 4 | forca 3 | xp 0 
-2. AMANDA (ROSA) | casa 0 | forca 3 | xp 0 
-3. BRUNA (VERDE) | casa 0 | forca 3 | xp 0 
-4. TIAGO (AZUL) | casa 0 | forca 3 | xp 0 
+1. CAIO (ROXO) | casa 4 | forca 3 | xp 0
+2. AMANDA (ROSA) | casa 0 | forca 3 | xp 0
+3. BRUNA (VERDE) | casa 0 | forca 3 | xp 0
+4. TIAGO (AZUL) | casa 0 | forca 3 | xp 0
 ===============================
 =========== ESTADO ============
 [INICIO] <- TIAGO, CAIO, AMANDA
@@ -51,16 +51,16 @@
 - Situacao: EM ANDAMENTO
 ===============================
 =========== RANKING ===========
-1. BRUNA (VERDE) | casa 6 | forca 3 | xp 0 
-2. AMANDA (ROSA) | casa 0 | forca 3 | xp 0 
-3. CAIO (ROXO) | casa 0 | forca 3 | xp 0 
-4. TIAGO (AZUL) | casa 0 | forca 3 | xp 0 
+1. BRUNA (VERDE) | casa 6 | forca 3 | xp 0
+2. AMANDA (ROSA) | casa 0 | forca 3 | xp 0
+3. CAIO (ROXO) | casa 0 | forca 3 | xp 0
+4. TIAGO (AZUL) | casa 0 | forca 3 | xp 0
 ===============================
 =========== RANKING ===========
-1. BRUNA (VERDE) | casa 11 | forca 3 | xp 0 
-2. CAIO (ROXO) | casa 4 | forca 3 | xp 0 
-3. AMANDA (ROSA) | casa 0 | forca 3 | xp 0 
-4. TIAGO (AZUL) | casa 0 | forca 3 | xp 0 
+1. BRUNA (VERDE) | casa 11 | forca 3 | xp 0
+2. CAIO (ROXO) | casa 4 | forca 3 | xp 0
+3. AMANDA (ROSA) | casa 0 | forca 3 | xp 0
+4. TIAGO (AZUL) | casa 0 | forca 3 | xp 0
 ===============================
 ========= RELATORIO ===========
 - Celulas do mapa: 10

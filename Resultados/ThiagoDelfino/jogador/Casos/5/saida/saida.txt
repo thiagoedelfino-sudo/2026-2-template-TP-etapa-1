@@ -90,10 +90,10 @@
 - Situacao: EM ANDAMENTO
 ===============================
 =========== RANKING ===========
-1. ARQUEIRO (AMARELO) | casa 11 | forca 3 | xp 0 
-2. GUERREIRO (VERMELHO) | casa 8 | forca 4 | xp 15 
-3. LADINO (VERDE) | casa 7 | forca 3 | xp 0 
-4. MAGO (AZUL) | casa 5 | forca 2 | xp 0 
+1. ARQUEIRO (AMARELO) | casa 11 | forca 3 | xp 0
+2. GUERREIRO (VERMELHO) | casa 8 | forca 4 | xp 15
+3. LADINO (VERDE) | casa 7 | forca 3 | xp 0
+4. MAGO (AZUL) | casa 5 | forca 2 | xp 0
 ===============================
 =========== ESTADO ============
 [INICIO]
@@ -122,10 +122,10 @@
 - Situacao: VENCEDOR ARQUEIRO
 ===============================
 =========== RANKING ===========
-1. ARQUEIRO (AMARELO) | casa 17 | forca 3 | xp 0 
-2. GUERREIRO (VERMELHO) | casa 12 | forca 6 | xp 15 
-3. MAGO (AZUL) | casa 11 | forca 2 | xp 0 
-4. LADINO (VERDE) | casa 10 | forca 3 | xp 0 
+1. ARQUEIRO (AMARELO) | casa 17 | forca 3 | xp 0
+2. GUERREIRO (VERMELHO) | casa 12 | forca 6 | xp 15
+3. MAGO (AZUL) | casa 11 | forca 2 | xp 0
+4. LADINO (VERDE) | casa 10 | forca 3 | xp 0
 ===============================
 ========= RELATORIO ===========
 - Celulas do mapa: 16

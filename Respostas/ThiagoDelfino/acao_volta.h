@@ -13,6 +13,6 @@ int executaVolta(void *dado,Jogador *j);
 
 void imprimeVolta(void *dado);
 
-void desalocaVolta(void dado);
+void desalocaVolta(void *dado);
 
 #endif

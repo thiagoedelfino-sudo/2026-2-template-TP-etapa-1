@@ -20,9 +20,9 @@
 - Situacao: EM ANDAMENTO
 ===============================
 =========== RANKING ===========
-1. BRUNO (VERDE) | casa 13 | forca 5 | xp 0 
-2. ANA (VERMELHO) | casa 5 | forca 7 | xp 0 
-3. CARLA (AMARELO) | casa 3 | forca 4 | xp 0 
+1. BRUNO (VERDE) | casa 13 | forca 5 | xp 0
+2. ANA (VERMELHO) | casa 5 | forca 7 | xp 0
+3. CARLA (AMARELO) | casa 3 | forca 4 | xp 0
 ===============================
 ========= RELATORIO ===========
 - Celulas do mapa: 12

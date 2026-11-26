@@ -8,7 +8,8 @@ struct Avanca{
 
 Avanca *criaAvanca(int avanco){
     Avanca *a=(Avanca*)calloc(1,sizeof(Avanca));
-    a->avanco;
+    a->avanco=avanco;
+    return a;
 }
 
 Avanca *leAvanca(){
@@ -28,7 +29,7 @@ void imprimeAvanca(void *dado){
     printf("AVANCA %d",a->avanco);
 }
 
-void desalocaAvanca(void dado){
+void desalocaAvanca(void *dado){
     Avanca *a=(Avanca*)dado;
     if(a!=NULL)
         free(a);

@@ -13,6 +13,6 @@ int executaAvanca(void *dado,Jogador *j);
 
 void imprimeAvanca(void *dado);
 
-void desalocaAvanca(void dado);
+void desalocaAvanca(void *dado);
 
 #endif

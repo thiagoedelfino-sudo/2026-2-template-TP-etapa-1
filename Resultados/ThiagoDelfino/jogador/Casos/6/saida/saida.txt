@@ -59,7 +59,7 @@
 - Situacao: VENCEDOR SOLO
 ===============================
 =========== RANKING ===========
-1. SOLO (DOURADO) | casa 9 | forca 1 | xp 0 
+1. SOLO (DOURADO) | casa 9 | forca 1 | xp 0
 ===============================
 ========= RELATORIO ===========
 - Celulas do mapa: 8

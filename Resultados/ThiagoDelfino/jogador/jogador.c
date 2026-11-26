@@ -278,7 +278,7 @@ void printEstadoJogador(void *dado){
  * @param colocacao Colocação do jogador no ranking (começando em 1)
  */
 void printRankingJogador(Jogador *j, int colocacao){
-    printf("%d. %s (%s) | casa %d | forca %d | xp %d \n",colocacao,j->nome,j->cor,j->posjogador,j->forca,j->xp);
+    printf("%d. %s (%s) | casa %d | forca %d | xp %d\n",colocacao,j->nome,j->cor,j->posjogador,j->forca,j->xp);
 }
 
 /**

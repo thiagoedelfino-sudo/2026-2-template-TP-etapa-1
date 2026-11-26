@@ -62,9 +62,9 @@
 - Situacao: EM ANDAMENTO
 ===============================
 =========== RANKING ===========
-1. ALICE (CINZA) | casa 4 | forca 2 | xp 0 
-2. BIA (MARROM) | casa 2 | forca 3 | xp 0 
-3. ZECA (LARANJA) | casa 0 | forca 2 | xp 0 
+1. ALICE (CINZA) | casa 4 | forca 2 | xp 0
+2. BIA (MARROM) | casa 2 | forca 3 | xp 0
+3. ZECA (LARANJA) | casa 0 | forca 2 | xp 0
 ===============================
 =========== ESTADO ============
 [INICIO]
@@ -100,7 +100,7 @@
 - BIA: jogadas 5 | disputas vencidas 5 | forca 3 | xp 0 | ouro 0
 ===============================
 =========== RANKING ===========
-1. ALICE (CINZA) | casa 13 | forca 2 | xp 0 
-2. BIA (MARROM) | casa 4 | forca 3 | xp 0 
-3. ZECA (LARANJA) | casa 3 | forca 2 | xp 0 
+1. ALICE (CINZA) | casa 13 | forca 2 | xp 0
+2. BIA (MARROM) | casa 4 | forca 3 | xp 0
+3. ZECA (LARANJA) | casa 3 | forca 2 | xp 0
 ===============================

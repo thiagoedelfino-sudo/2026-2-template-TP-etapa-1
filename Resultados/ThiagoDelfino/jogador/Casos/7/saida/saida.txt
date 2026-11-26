@@ -26,8 +26,8 @@
 - Situacao: VENCEDOR JOAO
 ===============================
 =========== RANKING ===========
-1. JOAO (VERDE) | casa 2 | forca 2 | xp 0 
-2. PEDRO (AZUL) | casa 0 | forca 2 | xp 0 
+1. JOAO (VERDE) | casa 2 | forca 2 | xp 0
+2. PEDRO (AZUL) | casa 0 | forca 2 | xp 0
 ===============================
 ========= RELATORIO ===========
 - Celulas do mapa: 1

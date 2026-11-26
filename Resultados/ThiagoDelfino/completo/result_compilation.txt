@@ -1,0 +1,4 @@
+acao_vazia.c: In function ‘imprimeVazia’:
+acao_vazia.c:23:12: warning: unused variable ‘v’ [-Wunused-variable]
+   23 |     Vazia *v=(Vazia*)dado;
+      |            ^

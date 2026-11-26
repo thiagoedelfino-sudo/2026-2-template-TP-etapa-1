@@ -12,6 +12,6 @@ int executaOuro(void *dado,Jogador *j);
 
 void imprimeOuro(void *dado);
 
-void desalocaOuro(void dado);
+void desalocaOuro(void *dado);
 
 #endif
