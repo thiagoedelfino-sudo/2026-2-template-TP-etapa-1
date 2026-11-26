@@ -2,17 +2,189 @@
 #include <stdlib.h>
 #include <string.h>
 #include "mapa.h"
-#include "acao_avanca.h"
-#include "acao_item.h"
 #include "acao_monstro.h"
-#include "acao_ouro.h"
-#include "acao_volta.h"
 #include "dado.h"
-#include "acao_vazia.h"
 
 #define MAX_TAM_INDICE 21
 
-static void resolveDisputa(Mapa *m, Jogador *joga, int pos) {
+/* ===================== Acoes (movidas para o main) ===================== */
+
+#define MAX_TAM_NOME_ITEM 21
+
+/* ---- OURO ---- */
+typedef struct Ouro {
+    int moedas;
+} Ouro;
+
+static Ouro *criaOuro(int moedas){
+    Ouro *o=(Ouro*)calloc(1,sizeof(Ouro));
+    o->moedas=moedas;
+    return o;
+}
+
+static Ouro *leOuro(){
+    int moedas;
+    scanf("%d",&moedas);
+    return criaOuro(moedas);
+}
+
+static int executaOuro(void *dado,Jogador *j){
+    Ouro *o=(Ouro*)dado;
+    adicionaOuroJogador(j,o->moedas);
+    return 0;
+}
+
+static void imprimeOuro(void *dado){
+    Ouro *o=(Ouro*)dado;
+    printf("OURO %d",o->moedas);
+}
+
+static void desalocaOuro(void *dado){
+    Ouro *o=(Ouro*)dado;
+    if(o!=NULL)
+        free(o);
+}
+
+/* ---- ITEM ---- */
+typedef struct Item {
+    char nome[MAX_TAM_NOME_ITEM];
+    int preco,bonus;
+} Item;
+
+static Item *criaItem(char *nome,int preco, int bonus){
+    Item *i=(Item*)calloc(1,sizeof(Item));
+    strcpy(i->nome,nome);
+    i->preco=preco;
+    i->bonus=bonus;
+    return i;
+}
+
+static Item *leItem(){
+    char nome[MAX_TAM_NOME_ITEM];
+    int preco,bonus;
+    scanf("%s %d %d",nome,&preco,&bonus);
+    return criaItem(nome,preco,bonus);
+}
+
+static int executaItem(void *dado, Jogador *j) {
+    Item *i = (Item *)dado;
+    if (obtemOuroJogador(j) >= i->preco) {
+        adicionaOuroJogador(j, -i->preco);
+        adicionaForcaJogador(j, i->bonus);
+    }
+    return 0;
+}
+
+static void imprimeItem(void *dado){
+    Item *i=(Item*)dado;
+    printf("ITEM %s (P:%d F:+%d)",i->nome,i->preco,i->bonus);
+}
+
+static void desalocaItem(void *dado){
+    Item *i=(Item*)dado;
+    if(i!=NULL)
+        free(i);
+}
+
+/* ---- AVANCA ---- */
+typedef struct Avanca {
+    int avanco;
+} Avanca;
+
+static Avanca *criaAvanca(int avanco){
+    Avanca *a=(Avanca*)calloc(1,sizeof(Avanca));
+    a->avanco=avanco;
+    return a;
+}
+
+static Avanca *leAvanca(){
+    int avanco;
+    scanf("%d",&avanco);
+    return criaAvanca(avanco);
+}
+
+static int executaAvanca(void *dado,Jogador *j){
+    Avanca *a=(Avanca*)dado;
+    return a->avanco;
+
+}
+
+static void imprimeAvanca(void *dado){
+    Avanca *a=(Avanca*)dado;
+    printf("AVANCA %d",a->avanco);
+}
+
+static void desalocaAvanca(void *dado){
+    Avanca *a=(Avanca*)dado;
+    if(a!=NULL)
+        free(a);
+}
+
+/* ---- VOLTA ---- */
+typedef struct Volta {
+    int recuo;
+} Volta;
+
+static Volta *criaVolta(int recuo){
+    Volta *v=(Volta*)calloc(1,sizeof(Volta));
+    v->recuo=recuo;
+    return v;
+}
+
+static Volta *leVolta(){
+    int recuo;
+    scanf("%d",&recuo);
+    return criaVolta(recuo);
+}
+
+static int executaVolta(void *dado,Jogador *j){
+    Volta *v=(Volta*)dado;
+    return -v->recuo;
+}
+
+static void imprimeVolta(void *dado){
+    Volta *v=(Volta*)dado;
+    printf("VOLTA %d",v->recuo);
+}
+
+static void desalocaVolta(void *dado){
+    Volta *v=(Volta*)dado;
+    if(v!=NULL)
+        free(v);
+}
+
+/* ---- VAZIA ---- */
+typedef struct Vazia {
+    int nada;
+} Vazia;
+
+static Vazia *criaVazia(){
+    Vazia *v=(Vazia*)calloc(1,sizeof(Vazia));
+    return v;
+}
+
+static Vazia *leVazia(){
+    return criaVazia();
+}
+
+static int executaVazia(void *dado,Jogador *j){
+    return 0;
+}
+
+static void imprimeVazia(void *dado){
+    printf("VAZIA");
+}
+
+static void desalocaVazia(void *dado){
+    if(dado!=NULL){
+        free(dado);
+    }
+}
+
+/* ======================= Fim das acoes ================================= */
+
+
+static int resolveDisputa(Mapa *m, Jogador *joga, int pos) {
     Jogador *oponente = obtemOcupanteMapa(m, pos);
     int venceu = venceDisputaJogador(joga, oponente);
     if (venceu == 1) {
@@ -20,9 +192,12 @@ static void resolveDisputa(Mapa *m, Jogador *joga, int pos) {
         recuaJogadorMapa(m, oponente, pos);
         moveJogadorMapa(m, joga, pos);
         incrementaDisputasVencidasJogador(joga);
+        return 1;
     } else {
+        retiraJogadorMapa(m, joga);
         recuaJogadorMapa(m, joga, pos);
         incrementaDisputasVencidasJogador(oponente);
+        return 0;
     }
 }
 
@@ -91,9 +266,11 @@ int main() {
             if (strcmp(indice, "ESTADO") == 0) {
                 printf("=========== ESTADO ============\n");
                 printf("[INICIO]");
+                int primeiroInicio = 1;
                 for (int i = 0; i < nJogadores; i++) {
                     if (obtemPosicaoJogador(jogadores[i]) == 0) {
-                        printf(" <- %s", obtemNomeJogador(jogadores[i]));
+                        printf(primeiroInicio ? " <- %s" : ", %s", obtemNomeJogador(jogadores[i]));
+                        primeiroInicio = 0;
                     }
                 }
                 printf("\n");
@@ -166,36 +343,47 @@ int main() {
                         moveJogadorMapa(m, joga, pos);
                         break;
                     }
-                    Celula *celu = obtemCelulaMapa(m, pos);
+                    int atual = pos;
+                    int chegou = 1;
+                    Celula *celu = obtemCelulaMapa(m, atual);
                     if (estaOcupadaCelula(celu) == 1) {
-                        resolveDisputa(m, joga, pos);
+                        chegou = resolveDisputa(m, joga, atual);
                     } else {
-                        moveJogadorMapa(m, joga, pos);
-                        int res = executaAcaoCelula(celu, joga);
+                        moveJogadorMapa(m, joga, atual);
+                    }
 
-                        if (res == RECUO_CELULA) {
-                            recuaJogadorMapa(m, joga, pos);
-                        } else if (res != 0) {
-                            int novaPos = pos + res;
-                            if (novaPos < 0) {
-                                novaPos = 0;
-                            }
-                            if (novaPos >= obtemPosicaoFimMapa(m)) {
-                                ganhou = 1;
-                                numVence = turno;
-                                moveJogadorMapa(m, joga, obtemPosicaoFimMapa(m));
-                                break;
-                            } else if (novaPos == 0) {
-                                moveJogadorMapa(m, joga, 0);
-                            } else {
-                                Celula *novaCel = obtemCelulaMapa(m, novaPos);
-                                if (estaOcupadaCelula(novaCel) == 1) {
-                                    resolveDisputa(m, joga, novaPos);
-                                } else {
-                                    moveJogadorMapa(m, joga, novaPos);
-                                }
-                            }
+                    while (chegou) {
+                        celu = obtemCelulaMapa(m, atual);
+                        int res = executaAcaoCelula(celu, joga);
+                        if (res == 0) {
+                            break;
                         }
+                        if (res == RECUO_CELULA) {
+                            recuaJogadorMapa(m, joga, atual);
+                            break;
+                        }
+                        int novaPos = atual + res;
+                        if (novaPos < 0) {
+                            novaPos = 0;
+                        }
+                        if (novaPos >= obtemPosicaoFimMapa(m)) {
+                            ganhou = 1;
+                            numVence = turno;
+                            moveJogadorMapa(m, joga, obtemPosicaoFimMapa(m));
+                            break;
+                        }
+                        if (novaPos == 0) {
+                            moveJogadorMapa(m, joga, 0);
+                            break;
+                        }
+                        Celula *novaCel = obtemCelulaMapa(m, novaPos);
+                        atual = novaPos;
+                        if (estaOcupadaCelula(novaCel) == 1) {
+                            chegou = resolveDisputa(m, joga, atual);
+                        } else {
+                            moveJogadorMapa(m, joga, atual);
+                        }
+                        break; /* o deslocamento de AVANCA/VOLTA nao dispara nova acao */
                     }
 
                     if (ganhou == 1) {

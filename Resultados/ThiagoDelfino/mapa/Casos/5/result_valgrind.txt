@@ -1,0 +1,15 @@
+==40052== Memcheck, a memory error detector
+==40052== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==40052== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==40052== Command: Resultados/ThiagoDelfino/mapa/prog Resultados/ThiagoDelfino/mapa/Casos/5
+==40052== Parent PID: 40051
+==40052== 
+==40052== 
+==40052== HEAP SUMMARY:
+==40052==     in use at exit: 0 bytes in 0 blocks
+==40052==   total heap usage: 75 allocs, 75 frees, 11,704 bytes allocated
+==40052== 
+==40052== All heap blocks were freed -- no leaks are possible
+==40052== 
+==40052== For lists of detected and suppressed errors, rerun with: -s
+==40052== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
